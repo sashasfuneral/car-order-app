@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ автомобиля - СашаГаз</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>СашаГаз</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="order.html">Заказать авто</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="phone">
+                <i class="fas fa-phone"></i> +7 (777) 777-77-77
+            </div>  
+        </div>
+    </header>
+
+    <section class="order-form">
+        <div class="container">
+            <h2>Форма заказа автомобиля</h2>
+            <form id="carOrderForm">
+                <div class="form-group">
+                    <label for="carModel">Выберите автомобиль:</label>
+                    <select id="carModel" name="carModel" required>
+                        <option value="">-- Выберите автомобиль --</option>
+                        <option value="Mercedes S-Class">Mercedes S-Class - от 15 000 ₽/сутки</option>
+                        <option value="BMW X5">BMW X5 - от 12 000 ₽/сутки</option>
+                        <option value="Audi A6">Audi A6 - от 10 000 ₽/сутки</option>
+                        <option value="Lexus RX">Lexus RX - от 13 000 ₽/сутки</option>
+                        <option value="Porsche 911">Porsche 911 - от 25 000 ₽/сутки</option>
+                        <option value="Volkswagen Tiguan">Volkswagen Tiguan - от 8 000 ₽/сутки</option>
+                        <option value="Toyota Camry">Toyota Camry - от 7 000 ₽/сутки</option>
+                        <option value="Hyundai Creta">Hyundai Creta - от 6 000 ₽/сутки</option>
+                        <option value="Kia Rio">Kia Rio - от 4 000 ₽/сутки</option>
+                        <option value="Lada Vesta">Lada Vesta - от 3 000 ₽/сутки</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="startDate">Дата начала аренды:</label>
+                        <input type="date" id="startDate" name="startDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="endDate">Дата окончания аренды:</label>
+                        <input type="date" id="endDate" name="endDate" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="deliveryAddress">Адрес доставки (если требуется):</label>
+                    <input type="text" id="deliveryAddress" name="deliveryAddress" placeholder="Введите адрес доставки">
+                </div>
+
+                <div class="form-group">
+                    <label>Дополнительные услуги:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="services" value="child_seat"> Детское кресло (+500 ₽/сутки)</label>
+                        <label><input type="checkbox" name="services" value="navigator"> Навигатор (+300 ₽/сутки)</label>
+                        <label><input type="checkbox" name="services" value="insurance"> Полная страховка (+1500 ₽/сутки)</label>
+                        <label><input type="checkbox" name="services" value="driver"> Водитель (+2000 ₽/час)</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullName">ФИО:</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Иванов Иван Иванович">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+7 (777) 777-77-77">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="example@sashagaz.ru">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Комментарии к заказу:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Ваши пожелания и комментарии"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn">Отправить заявку</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="order-info">
+        <div class="container">
+            <h3>Как оформить заказ</h3>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Выберите автомобиль</h4>
+                    <p>Выберите понравившийся автомобиль из нашего каталога</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Заполните форму</h4>
+                    <p>Укажите даты аренды и контактные данные</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Подтверждение</h4>
+                    <p>Наш менеджер свяжется с вами для подтверждения заказа</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Получение авто</h4>
+                    <p>Получите автомобиль в указанное время и месте</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-column">
+                    <h3>АвтоГаз</h3>
+                    <p>Аренда автомобилей в Москве</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Ленина, 1</p>
+                    <p><i class="fas fa-phone"></i> +7 (777) 777-77-77</p>
+                    <p><i class="fas fa-envelope"></i> info@sashagaz.ru</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Часы работы</h3>
+                    <p>Пн-Пт: 9:00 - 21:00</p>
+                    <p>Сб-Вс: 10:00 - 20:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 СашаГаз. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Заполнение выбранного автомобиля из URL
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const selectedCar = urlParams.get('car');
+            if (selectedCar) {
+                const select = document.getElementById('carModel');
+                for (let i = 0; i < select.options.length; i++) {
+                    if (select.options[i].value === selectedCar) {
+                        select.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
