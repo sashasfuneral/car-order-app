@@ -60,7 +60,7 @@
 
                 <div class="form-group">
                     <label for="deliveryAddress">Адрес доставки (если требуется):</label>
-                    <input type="text" id="deliveryAddress" name="deliveryAddress" placeholder="Введите адрес доставки">
+                    <input type="text" id="deliveryAddress" name="deliveryAddress" placeholder="Адрес доставки">
                 </div>
 
                 <div class="form-group">
@@ -74,8 +74,8 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="fullName">ФИО:</label>
-                    <input type="text" id="fullName" name="fullName" required placeholder="Иванов Иван Иванович">
+                    <label for="fullName">Ваше имя:</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Имя">
                 </div>
 
                 <div class="form-row">
@@ -95,7 +95,7 @@
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" class="btn">Отправить заявку</button>
+                    <button type="submit" class="btn">Отправить заказ</button>
                 </div>
             </form>
         </div>
@@ -133,7 +133,7 @@
         <div class="container">
             <div class="footer-columns">
                 <div class="footer-column">
-                    <h3>АвтоГаз</h3>
+                    <h3>СашаГаз</h3>
                     <p>Аренда автомобилей в Москве</p>
                 </div>
                 <div class="footer-column">
@@ -155,21 +155,5 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script>
-        // Заполнение выбранного автомобиля из URL
-        document.addEventListener('DOMContentLoaded', function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const selectedCar = urlParams.get('car');
-            if (selectedCar) {
-                const select = document.getElementById('carModel');
-                for (let i = 0; i < select.options.length; i++) {
-                    if (select.options[i].value === selectedCar) {
-                        select.selectedIndex = i;
-                        break;
-                    }
-                }
-            }
-        });
-    </script>
 </body>
 </html>
