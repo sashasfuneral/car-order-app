@@ -1,0 +1,19 @@
+{
+  "name": "car-order-app",
+  "version": "1.0.0",
+  "description": "![image](https://github.com/user-attachments/assets/0f972b85-2fc5-4240-bbee-77bf8051f8fa) ## order.html ![image](https://github.com/user-attachments/assets/98ace717-a067-46b9-948c-c3a762218842) ## contacts.html ![image](https://github.com/user-attachments/assets/ec45fc24-1177-4ea1-ba5d-5e6605f2f1df)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mssql": "^11.0.1"
+  }
+}
